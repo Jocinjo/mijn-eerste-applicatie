@@ -5,9 +5,9 @@ import java.sql.SQLOutput;
 //check of hij het nog doet
 public class Main{
     public static void main(String[] args) {
-        introductieClass Anna = new introductieClass( "Anna");
-        introductieClass Tom = new introductieClass( "Tom");
-        introductieClass Rob = new introductieClass( "Rob");
+        introductieClass Anna = new introductieClass( "Anna", 28);
+        introductieClass Tom = new introductieClass( "Tom", 38);
+        introductieClass Rob = new introductieClass( "Rob", 26);
     }
 }
 
