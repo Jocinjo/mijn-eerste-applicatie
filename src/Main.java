@@ -6,6 +6,7 @@ import java.sql.SQLOutput;
 public class Main{
     public static void main(String[] args) {
         introductieClass Josie = new introductieClass( "Josie");
+        introductieClass Josie = new introductieClass( "Tommie");
     }
 }
 
