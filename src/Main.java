@@ -5,11 +5,7 @@ import java.sql.SQLOutput;
 //check of hij het nog doet
 public class Main{
     public static void main(String[] args) {
-        System.out.print("ik ben Josie\n");
-        System.out.println("ik ben 28 jaar oud.");
-        System.out.println("ik woon in den bosch");
-        System.out.println("ik zing in een koor");
-        System.out.println("ik ben dol op de rubix kubus");
+            Voorstellen Josie = new Voorstellen(naam "Josie");
     }
     }
 

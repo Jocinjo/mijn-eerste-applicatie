@@ -1,3 +1,6 @@
 public class Voorstellen {
-    S
+    public Voorstellen(String naam) {
+        int leeftijd = 28;
+        System.out.print(naam);
+    }
 }
