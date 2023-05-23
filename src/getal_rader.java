@@ -17,7 +17,7 @@ public class getal_rader {
 
         while(game.equals("yes")) {
             int beurten = 0;
-            int randomNum = (int) (Math.random() * 6);  // 0 to 1000
+            int randomNum = (int) (Math.random() * 1001);  // 0 to 1000
             System.out.println(randomNum);
             while (beurten < 10) {
                 System.out.println("Enter your guess ");
