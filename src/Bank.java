@@ -1,3 +1,5 @@
+//ik heb nu scanners gemaakt maar dat moet eigenlijk niet. de rest werkt waarschijnlijk al
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -24,7 +26,7 @@ public class Bank {
 
     }
     public void getAccount(String accountNumber) { //key laten printen.
-        System.out.println(Bankaccounts.containsValue(balance));
+//        System.out.println(Bankaccounts.containsValue(balance));
         System.out.println(Bankaccounts.get(accountNumber));
     }
     public void getAccountNumber() {

@@ -5,36 +5,13 @@ import java.sql.SQLOutput;
 //check of hij het nog doet
 public class Main{
     public static void main(String[] args) {
-        introductieClass Anna = new introductieClass( "Anna", 28);
-        introductieClass Tom = new introductieClass( "Tom", 38);
-        introductieClass Rob = new introductieClass( "Rob", 26);
+       Bank bank = new Bank();
+       bank.createAccount("NL01ABCD1234567890", 100.00);
+       bank.createAccount("NL02EFGH1234567890", 500.00);
+       bank.deposit("NL01ABCD1234567890", 250.00);
+       bank.withdraw("NL02EFGH1234567890", 200.00);
+//       System.out.println(bank.getAccount("NL01ABCD1234567890"));
 
-        Car myCar = new Car();
-        myCar.drive();
-        myCar.brake();
-        myCar.typeOfFuel = "benzine";
-        myCar.drive();
-
-        schoolklas mbo = new schoolklas();
-        mbo.klas();
-        mbo.level = "HBO";
-        mbo.klas();
-
-        Disney frozen = new Disney("Frozen", "morgen");
-        frozen.kijken();
-        Disney bambi = new Disney("Bambi", "donderdag");
-        Disney tangled = new Disney("Tangled", "wanneer");
-        bambi.kijken();
-        tangled.kijken();
-        Disney biggen = new Disney("3 biggetjes", "woensdag");
-
-
-        Test poging1 = new Test();
-        poging1.pogingen();
-        Test poging2 = new Test();
-        poging2.pogingen();
-        poging2.totaal_aantal +=2;
-        poging2.pogingen();
     }
 }
 
