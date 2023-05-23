@@ -33,6 +33,8 @@ public class Main{
         poging1.pogingen();
         Test poging2 = new Test();
         poging2.pogingen();
+        poging2.totaal_aantal +=2;
+        poging2.pogingen();
     }
 }
 
