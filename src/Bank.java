@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Bank {
-    Scanner input = new Scanner(System.in);
-    String accountNumber = input.next();
+//    Scanner input = new Scanner(System.in);
+    String accountNumber;
 //    int beginsaldo = input.nextInt();
-    double balance = input.nextDouble();
-    double amount = input.nextDouble();
+    double balance;
+    double amount;
     HashMap<String, Double> Bankaccounts = new HashMap<String, Double>();
 
     public Bank() {
