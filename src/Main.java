@@ -6,11 +6,18 @@ import java.sql.SQLOutput;
 public class Main{
     public static void main(String[] args) {
        Bank bank = new Bank();
-       bank.createAccount("NL01ABCD1234567890", 100.00);
+       bank.createAccount("NL01ABCD1234567890", 1000.00);
        bank.createAccount("NL02EFGH1234567890", 500.00);
        bank.deposit("NL01ABCD1234567890", 250.00);
        bank.withdraw("NL02EFGH1234567890", 200.00);
        bank.getAccount("NL01ABCD1234567890");
+       bank.getBalance("NL01ABCD1234567890");
+       bank.deposit("NL01ABCD1234567890", 250.00);
+       bank.getBalance("NL01ABCD1234567890");
+
+
+
+//        Test_hashMap jo = new Test_hashMap();
 
 
     }

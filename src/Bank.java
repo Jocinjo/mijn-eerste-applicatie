@@ -33,7 +33,14 @@ public class Bank {
 
     }
     public void deposit(String accountNumber, double amount) {
-        Bankaccounts.put(accountNumber, +amount);
+//        double balansonzin = getBalance(accountNumber);
+//        double toevoegenDouble = balansonzin += amount;
+//        Bankaccounts.put(accountNumber, +toevoegenDouble);
+        double currentBalance = Bankaccounts.getOrDefault(accountNumber, 0.0);
+        double newBalance = currentBalance + amount;
+        Bankaccounts.put(accountNumber, newBalance);
+
+//        this.balance += amount;
     }
     public void withdraw(String accountNumber, double amount) {
         while (Bankaccounts.put(accountNumber, -amount)!=0) {
@@ -43,8 +50,9 @@ public class Bank {
             }
         }
     }
-    public void getBalance() {
+    public Double getBalance(String accountNumber) {
         System.out.println(Bankaccounts.get(accountNumber));
+        return balance;
 
     }
 
