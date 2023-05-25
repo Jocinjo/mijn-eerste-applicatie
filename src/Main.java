@@ -14,6 +14,7 @@ public class Main{
        bank.getBalance("NL01ABCD1234567890");
        bank.deposit("NL01ABCD1234567890", 250.00);
        bank.getBalance("NL01ABCD1234567890");
+       bank.getBalance("NL02EFGH1234567890");
 
 
 

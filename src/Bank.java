@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Bank {
-//    Scanner input = new Scanner(System.in);
+    //    Scanner input = new Scanner(System.in);
     String accountNumber;
-//    int beginsaldo = input.nextInt();
+    //    int beginsaldo = input.nextInt();
     double balance;
     double amount;
     HashMap<String, Double> Bankaccounts = new HashMap<String, Double>();
@@ -25,31 +25,44 @@ public class Bank {
         Bankaccounts.put(accountNumber, balance);
 
     }
+
     public void getAccount(String accountNumber) { //key laten printen.
 //        System.out.println(Bankaccounts.containsValue(balance));
         System.out.println(Bankaccounts.get(accountNumber));
     }
+
     public void getAccountNumber() {
 
     }
+
     public void deposit(String accountNumber, double amount) {
 //        double balansonzin = getBalance(accountNumber);
 //        double toevoegenDouble = balansonzin += amount;
 //        Bankaccounts.put(accountNumber, +toevoegenDouble);
-        double currentBalance = Bankaccounts.getOrDefault(accountNumber, 0.0);
+        double currentBalance = Bankaccounts.get(accountNumber);
         double newBalance = currentBalance + amount;
         Bankaccounts.put(accountNumber, newBalance);
 
 //        this.balance += amount;
     }
+
     public void withdraw(String accountNumber, double amount) {
-        while (Bankaccounts.put(accountNumber, -amount)!=0) {
-            Bankaccounts.put(accountNumber, -amount);
-            if (Bankaccounts.put(accountNumber, -amount) <0) {
-                break;
-            }
+//        while (Bankaccounts.put(accountNumber, -amount)!=0) {
+//            Bankaccounts.put(accountNumber, -amount);
+//            if (Bankaccounts.put(accountNumber, -amount) <0) {
+//                break;
+//            }
+
+        double currentBalance = Bankaccounts.getOrDefault(accountNumber, 0.0);
+        if (currentBalance >= amount) {
+            double newBalance = currentBalance - amount;
+            Bankaccounts.put(accountNumber, newBalance);
+        } else {
+            System.out.println("Insufficient balance for account: " + accountNumber);
         }
+
     }
+
     public Double getBalance(String accountNumber) {
         System.out.println(Bankaccounts.get(accountNumber));
         return balance;
