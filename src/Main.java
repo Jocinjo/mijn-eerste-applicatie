@@ -11,8 +11,14 @@ public class Main{
 //       bank.deposit("NL01ABCD1234567890", 250.00);
 //       bank.withdraw("NL02EFGH1234567890", 200.00);
 //       bank.getAccount("NL01ABCD1234567890");
-        Schaakbord s = new Schaakbord();
-                s.make();
+//        Schaakbord s = new Schaakbord();
+//                s.make();
+        Lamp een = new Lamp("aan");
+        Lamp twee = new Lamp("uit");
+        Lamp drie = new Lamp("wat");
+        System.out.println(twee.isAan);
+        drie.status = "uit";
+        System.out.println(drie.status);
 
     }
 }
