@@ -19,6 +19,18 @@ public class Main{
         System.out.println(twee.isAan);
         drie.status = "uit";
         System.out.println(drie.status);
+        System.out.println(drie.isAan);
+        een.status = "aan";
+        System.out.println(een.status);
+        een.aan();
+        een.status = "aan";
+        een.aan();
+        een.status = "uit";
+        een.status = "uit";
+        een.aan();
+        een.uit();
+        een.uit();
+
 
     }
 }

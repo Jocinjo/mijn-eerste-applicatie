@@ -15,13 +15,23 @@ public class Lamp {
         }
     }
     public void aan() {
-        System.out.println("De lamps staat aan!");
-        this.isAan = true;
+        if (!this.isAan) {
+            System.out.println("De lamps staat aan!");
+            this.isAan = true;
+        }
+        else {
+            System.out.println("staat al aan");
+        }
     }
 
     public void uit() {
-        System.out.println("De lamp staat uit!");
-        this.isAan = false;
+        if(this.isAan) {
+            System.out.println("De lamp staat uit!");
+            this.isAan = false;
+        }
+        else {
+            System.out.println("staat al uit");
+        }
 
     }
 }
