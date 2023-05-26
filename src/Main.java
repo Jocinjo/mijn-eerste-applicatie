@@ -17,6 +17,9 @@ public class Main{
        bank.getAccount("NL02EFGH1234567890");
        bank.getAccountNumber(1500.00);
 
+       BankAccount bankaccount = new BankAccount();
+       bankaccount.accountSettings(bank);
+
 
 
 
