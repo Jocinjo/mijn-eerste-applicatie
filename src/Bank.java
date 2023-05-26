@@ -1,6 +1,8 @@
 //ik heb nu scanners gemaakt maar dat moet eigenlijk niet. de rest werkt waarschijnlijk al
 
+import java.security.KeyStore;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Bank {
@@ -34,9 +36,9 @@ public class Bank {
     public void getAccountNumber(double balance) {
         // moet het rekeningnummer terug geven.
 //        System.out.println(Bankaccounts.containsValue(balance));
-        Bankaccounts.
+        }
 
-    }
+
 
     public void deposit(String accountNumber, double amount) {
         double currentBalance = Bankaccounts.get(accountNumber);
