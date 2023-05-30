@@ -22,6 +22,7 @@ public class Main{
 
         System.out.println(bankaccount.toString());
         bank.printString();
+        bankaccount.printAllAccountsInStrings(bank);
 
 
 

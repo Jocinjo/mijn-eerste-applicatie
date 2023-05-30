@@ -6,4 +6,8 @@ public class BankAccount {
         return bank.toString();
 
     }
+    public void printAllAccountsInStrings(Bank bank) {
+        bank.printString();
+        System.out.println("Dit is de versie van de bankaccountklasse");
+    }
 }
