@@ -21,7 +21,6 @@ public class BankAccount {
 
     public void getAccountNumber(double balance) {
         // moet het rekeningnummer terug geven.
-        ;
         System.out.println();
     }
     public void printAllAccountsInStrings(Bank bank) {
