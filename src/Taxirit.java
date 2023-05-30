@@ -25,6 +25,14 @@ public class Taxirit {
         aantalPers += persoon;
 
     }
+    public void voegPersoonToe(int persoon, int aantalPers) {
+        if ((persoon + aantalPers) > maxAantal) {
+            System.out.println("dit kan niet worden toegevoegd");
+            this.aantalPers = maxAantal;
+            return;
+        }
+        aantalPers += persoon;
+    }
 
     public double berekenPrijsPerPersoon() {
 
@@ -32,6 +40,10 @@ public class Taxirit {
             return prijsPerKm * afstand / aantalPers;
         }
         return prijsPerKm * afstand * 0.9 / aantalPers;
+    }
+
+    public double berekenPrijsPerPersoon(double korting) {
+        return (((prijsPerKm * afstand) / aantalPers) * korting);
     }
 }
 
