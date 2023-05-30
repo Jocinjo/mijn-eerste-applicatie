@@ -15,14 +15,17 @@ public class Main{
        bank.getBalance("NL01ABCD1234567890");
        bank.getBalance("NL02EFGH1234567890");
        bank.getAccount("NL02EFGH1234567890");
-       bank.getAccountNumber(1500.00);
+       BankAccount a = bank.getAccount("NL02EFGH1234567890");
+       System.out.println(a.balance);
+       bank.deposit("NL02EFGH1234567890", 200);
+       System.out.println(a.balance);
 
-       BankAccount bankaccount = new BankAccount();
-       bankaccount.accountSettings(bank);
+//       BankAccount bankaccount = new BankAccount();
+//       bankaccount.accountSettings(bank);
 
-        System.out.println(bankaccount.toString());
-        bank.printString();
-        bankaccount.printAllAccountsInStrings(bank);
+//        bank.printString();
+//        bankaccount.printAllAccountsInStrings(bank);
+//        bank.getAccountNumber(250.00);
 
 
 
