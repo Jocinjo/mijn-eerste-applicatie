@@ -20,21 +20,25 @@ public class Main{
 //       BankAccount bankaccount = new BankAccount();
 //       bankaccount.accountSettings(bank);
 
-       Taxirit rit1 = new Taxirit(15.5);
-       Taxirit rit2 = new Taxirit(15.5, 4, 4);
-       System.out.println(rit2.berekenPrijsPerPersoon());
-       rit2.voegPersoonToe(1);
-       rit2.voegPersoonToe(1);
+//       Taxirit rit1 = new Taxirit(15.5);
+//       Taxirit rit2 = new Taxirit(15.5, 4, 4);
+//       System.out.println(rit2.berekenPrijsPerPersoon());
 //       rit2.voegPersoonToe(1);
 //       rit2.voegPersoonToe(1);
 //       rit2.voegPersoonToe(1);
-       System.out.println(rit2.berekenPrijsPerPersoon());
-       System.out.println(rit2.berekenPrijsPerPersoon(0.50));
-       rit2.voegPersoonToe(2, 2);
-        System.out.println(rit2.berekenPrijsPerPersoon());
+//       rit2.voegPersoonToe(1);
+//       rit2.voegPersoonToe(1);
+//       System.out.println(rit2.berekenPrijsPerPersoon());
+//       System.out.println(rit2.berekenPrijsPerPersoon(0.50));
+//       rit2.voegPersoonToe(2, 2);
+//        System.out.println(rit2.berekenPrijsPerPersoon());
 
 
-
+        Student jo = new Student ("Josie");
+        jo.getNaam();
+        jo.spreek();
+        Persoon jan = new Persoon();
+        jan.spreek();
 
 //        Test_hashMap jo = new Test_hashMap();
 
