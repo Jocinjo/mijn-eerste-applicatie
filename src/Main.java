@@ -21,8 +21,14 @@ public class Main{
 //       bankaccount.accountSettings(bank);
 
        Taxirit rit1 = new Taxirit(15.5);
-       Taxirit rit2 = new Taxirit(15.5, 3, 4);
-        System.out.println(rit2.berekenPrijsPerPersoon());
+       Taxirit rit2 = new Taxirit(15.5, 1, 4);
+       System.out.println(rit2.berekenPrijsPerPersoon());
+       rit2.voegPersoonToe(1);
+       rit2.voegPersoonToe(1);
+       rit2.voegPersoonToe(1);
+//       rit2.voegPersoonToe(1);
+//       rit2.voegPersoonToe(1);
+       System.out.println(rit2.berekenPrijsPerPersoon());
 
 
 

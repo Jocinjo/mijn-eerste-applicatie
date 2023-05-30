@@ -5,7 +5,7 @@ public class Taxirit {
     private double afstand;
 
     public Taxirit(double afstand) {
-        this(afstand, 1, 4);
+        this(afstand, 6, 4);
 
 
         System.out.println("je hebt " + afstand + " KM gereden!");
@@ -21,7 +21,7 @@ public class Taxirit {
         System.out.println("de afstand die gereden is, is " + afstand + "en het percentage dat jullie moeten betalen is" + percentage);
     }
     public void voegPersoonToe(int persoon) {
-        int nieuweAantal = persoon + aantalPers;
+        aantalPers += persoon;
 
     }
 
