@@ -5,7 +5,7 @@ public class Taxirit {
     private double afstand;
 
     public Taxirit(double afstand) {
-        this(afstand, 6, 4);
+        this(afstand, 1, 4); //dit slaat aan op de volgende constructor volgorde.
 
 
         System.out.println("je hebt " + afstand + " KM gereden!");
@@ -21,6 +21,7 @@ public class Taxirit {
         System.out.println("de afstand die gereden is, is " + afstand + "en het percentage dat jullie moeten betalen is" + percentage);
     }
     public void voegPersoonToe(int persoon) {
+        //eventueel kanje een if maken voor dat je niet boven max kan
         aantalPers += persoon;
 
     }
@@ -28,9 +29,9 @@ public class Taxirit {
     public double berekenPrijsPerPersoon() {
 
         if (aantalPers < maxAantal) {
-            return prijsPerKm * afstand;
+            return prijsPerKm * afstand / aantalPers;
         }
-        return prijsPerKm * afstand * 0.9;
+        return prijsPerKm * afstand * 0.9 / aantalPers;
     }
 }
 
