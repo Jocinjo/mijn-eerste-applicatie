@@ -35,7 +35,7 @@ import java.util.Scanner;
 
         public void getAccountNumber(double balance) {
             // moet het rekeningnummer terug geven.
-//        System.out.println(Bankaccounts.containsValue(balance));
+        System.out.println(Bankaccounts.containsValue(balance));
         }
 
 
@@ -68,6 +68,16 @@ import java.util.Scanner;
         public void allAccounts() {
             // de hele hashmap printen
             System.out.println(Bankaccounts);
+        }
+
+        public String toString() {
+            String zoekobject = accountNumber;
+//            double x = Bankaccounts.get(zoekobject);
+//            return "Jouw rekeningnummer is " + accountNumber + "and your balance is " + (Double.toString(x));
+            return Bankaccounts.toString();
+        }
+        public void printString() {
+            System.out.println(Bankaccounts.toString());
         }
 
     }
