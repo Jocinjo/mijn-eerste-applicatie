@@ -13,6 +13,6 @@ public class Student extends Persoon {
     }
     public void spreek() {
         System.out.println("ik ben een student");
-        super.spreek();
+        super.spreek(); // dan roep je de moeder aan. moet wel dezelfde parameters hebben
     }
 }
