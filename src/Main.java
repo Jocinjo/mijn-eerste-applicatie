@@ -5,10 +5,13 @@
 public class Main{
     public static void main(String[] args) {
 
-       Dag_7 persoon = new Dag_7();
-       persoon.totalPoints();
-       persoon.totalPoints();
-       persoon.totalPoints();
+//       Dag_7 persoon = new Dag_7();
+//       persoon.totalPoints();
+//       persoon.totalPoints();
+//       persoon.totalPoints();
+
+       Dag_8 bord = new Dag_8();
+       bord.make();
 
 
 
