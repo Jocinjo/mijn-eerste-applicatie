@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 /*
@@ -6,8 +7,13 @@ dan alle scores optellen. 1 voor estate, 3 voor duchy en 6 voor province.
 laat alle punten zien pp.
  */
 public class Dag_7 {
-    public Dag_7() {}
-    public void totalPoints() {
+    public HashMap<String, Integer> kingdom = new HashMap<String, Integer>();
+
+    public Dag_7() {
+//        this.kingdom = kingdom;
+    }
+    public  void totalPoints() {
+
         Scanner input = new Scanner(System.in);
         System.out.println("whats your name? ");
         System.out.println("how many estates do you have? ");
@@ -25,6 +31,10 @@ public class Dag_7 {
         int pointsForSout = (estate * pointsEstate) + (duchy * pointsDuchy) + (province * pointsProvince);
         // misschien een hasmap maken zodat hij de punten onder elkaar kan laten zien. wacht is niet nodig maar 3 instanties aan en je ziet ze verschillend onder elkaar als je ze sout.
 //        misschien toch een hasmap aanmaken omdat je ze nu niet onder elkaar ziet.
+
+
+        kingdom.put(name, pointsForSout);
+        System.out.println(kingdom);
 
         System.out.println(name + ": " + pointsForSout);
 
