@@ -10,7 +10,6 @@ public class Dag_7 {
     public HashMap<String, Integer> kingdom = new HashMap<String, Integer>();
 
     public Dag_7() {
-//        this.kingdom = kingdom;
     }
     public  void totalPoints() {
 
