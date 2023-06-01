@@ -8,17 +8,8 @@ import java.util.Scanner;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-        Random random = new Random();
-        Fighter josie = new Fighter();
-        josie.Character(Gender.WOMAN, 8, "Josie");
-        josie.die();
-        josie.levelUp();
-        josie.speak();
-        josie.setDexterity(random.nextInt(18));
-        josie.setIntelligence(random.nextInt(18));
-        josie.printStats();
-
-
+   Dag_8 naam = new Dag_8(7);
+   naam.make();
     }
 }
 

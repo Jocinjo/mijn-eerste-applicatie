@@ -19,7 +19,7 @@ public class Dag_8 {
         for (int aantalh = 0; aantalh <= getallen; aantalh++) {
             for (int aantalv = 0; aantalv <= getallen; aantalv++) {
                 if (aantalh == left && aantalv == up) {
-                    System.out.print("[" + aantalh + "x," + aantalv + "] ");
+                    System.out.print("\u001B[31m[" + aantalh + "x," + aantalv + "] \u001B[0m");
                 } else {
                     System.out.print("[" + aantalh + ", " + aantalv + "] ");
                 }
