@@ -5,13 +5,12 @@ import java.util.Scanner;
 //check of hij het nog steeds doet.
 public class Main {
     public static void main(String[] args) {
-
-
-//        Dag_9 tijd = new Dag_9();
-//        tijd.clock();
-//        System.out.println("Josie");
-        Dag_8 vandaag = new Dag_8(7);
-        vandaag.make();
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        int x = Integer.parseInt(args[0]);
+        int y = Integer.parseInt(args[1]);
+        int z = Integer.parseInt(args[2]);
+        System.out.println(x + y * z);
 
 
     }
