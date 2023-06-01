@@ -6,10 +6,19 @@
 
 import java.util.Scanner;
 import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-   Dag_8 naam = new Dag_8(7);
-   naam.make();
+        Scanner input = new Scanner(System.in);
+        System.out.println("gave a number");
+        int left = input.nextInt();
+        System.out.println("gave a second number");
+        int right = input.nextInt();
+
+        Dag_8 josie = new Dag_8(left, right);
+        josie.positie();
+
+
     }
 }
 

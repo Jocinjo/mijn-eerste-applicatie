@@ -1,33 +1,37 @@
 // het programma markeert nu van links naar rechts en boven naar beneden. is niet helemaal de bedoeling van de opdracht.
 public class Dag_8 {
+    private int x;
+    private int y;
 
-    private int getallen;
-    private int left;
-    private int right;
-    private int up;
-    private int down;
 
-    public Dag_8(int getallen) {
-        this.getallen = getallen;
-        this.left = getallen - 1;
-        this.right = getallen + 1;
-        this.up = getallen - 1;
-        this.down = getallen + 1;
-    }
+    public Dag_8(int y, int x) {
+        this.x = x;
+        this.y = y;
 
-    public void make() {
-        for (int aantalh = 0; aantalh <= getallen; aantalh++) {
-            for (int aantalv = 0; aantalv <= getallen; aantalv++) {
-                if (aantalh == left && aantalv == up) {
-                    System.out.print("\u001B[31m[" + aantalh + "x," + aantalv + "] \u001B[0m");
-                } else {
-                    System.out.print("[" + aantalh + ", " + aantalv + "] ");
-                }
-            }
-            System.out.println();
+        }
+        public void setX(int x) {
+        this.x = x;
+        }
+
+        public void setY(int y) {
+        this.y = y;
+        }
+        public int getX() {
+        return x;
+        }
+        public int getY() {
+        return y;
+        }
+
+        public void positie() {
+        int y  = getY();
+        int x = getX();
+            System.out.println("\u001B[31m" + (y-1) + " " + x);
+            System.out.println((y+1) + " " + x);
+            System.out.println((y) + " " + (x-1));
+            System.out.println((y) + " " + (x+1) + "\u001B[0m");
         }
     }
 
 
-    }
 
