@@ -18,10 +18,10 @@ public class Dag_8 {
     public void make() {
         for (int aantalh = 0; aantalh <= getallen; aantalh++) {
             for (int aantalv = 0; aantalv <= getallen; aantalv++) {
-                if (aantalh == left || aantalv == up) {
+                if (aantalh == left && aantalv == up) {
                     System.out.print("[" + aantalh + "x," + aantalv + "] ");
                 } else {
-                    System.out.print("[" + aantalh + ",," + aantalv + "] ");
+                    System.out.print("[" + aantalh + ", " + aantalv + "] ");
                 }
             }
             System.out.println();
