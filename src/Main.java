@@ -11,9 +11,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
-        Dag_11 shop = new Dag_11();
-        shop.items();
+        Dag_12 game = new Dag_12();
+        game.spelletje();
     }
 }
 
