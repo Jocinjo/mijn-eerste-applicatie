@@ -12,10 +12,8 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
 
-        Dag_10 troups = new Dag_10();
-        troups.watchtower(1, 1);
-
-
+        Dag_11 shop = new Dag_11();
+        shop.items();
     }
 }
 
