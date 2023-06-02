@@ -6,6 +6,8 @@ maak het beeld leeg door 50x lege tekstregels.
 vraag nummer 2 om het nummer te raden.
 zeg als het geraden nummer te hoog of te laag is.
 geef ook aan als het wel geraden is.
+
+de do while loop werkt anders dan de while loop. in dit specifieke geval werkt de while loop niet.
  */
 public class Dag_12 {
     public Dag_12() {}
