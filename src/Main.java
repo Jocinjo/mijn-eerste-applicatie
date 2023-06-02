@@ -10,13 +10,10 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("gave a number");
-        int left = input.nextInt();
-        System.out.println("gave a second number");
-        int right = input.nextInt();
 
-        Dag_8 josie = new Dag_8(left, right);
-        josie.positie();
+
+        Dag_10 troups = new Dag_10();
+        troups.watchtower(1, 1);
 
 
     }
