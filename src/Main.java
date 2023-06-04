@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
-        Dag_13 attack = new Dag_13();
-        attack.magicalCannon();
+        Dag_14 magic = new Dag_14();
+        magic.dTo();
+        magic.displayAll();
     }
 }
 
