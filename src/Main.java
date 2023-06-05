@@ -26,6 +26,8 @@ public class Main {
         auto.getModelNaam();
         System.out.println(auto.modelNaam);
         System.out.println(auto.dealerName);
+        System.out.println(auto.count); // volgens mij doet de count het.
+        System.out.println(auto.aantalWielen);
     }
 }
 

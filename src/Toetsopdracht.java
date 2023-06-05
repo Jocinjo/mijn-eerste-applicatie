@@ -16,7 +16,7 @@ ik ga er een met voertuigen maken
  */
 public class Toetsopdracht extends Vehicle{
     public String modelNaam;
-    int aantalWielen;
+    int aantalWielen; //default value
     Scanner input = new Scanner(System.in);
 
 
