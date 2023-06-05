@@ -16,18 +16,10 @@ public class Main {
 //        Dag_15 freach = new Dag_15();
 //        freach.min();
 
-        Toetsopdracht auto = new Toetsopdracht();
-        auto.honk();
-        auto.dealer();
-        auto.configuratie();
-        auto.general(); //static is gebruikt
-        auto.countObjects(); //count doet het niet.
-        auto.setModelNaam("I3");
-        auto.getModelNaam();
-        System.out.println(auto.modelNaam);
-        System.out.println(auto.dealerName);
-        System.out.println(auto.count); // volgens mij doet de count het.
-        System.out.println(auto.aantalWielen);
+        Verpakking melk = new Verpakking(2,5, 10, true);
+        Verpakking fris = new Verpakking(2, 5, 10, true);
+        Verpakking kellogs = new Verpakking(2, 10, 5, false);
+        System.out.println(melk.equals(fris); //fit snap ik nog niet. equals moet ik nog uitzoeken.
     }
 }
 
