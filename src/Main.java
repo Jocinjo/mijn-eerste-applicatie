@@ -22,7 +22,10 @@ public class Main {
         auto.configuratie();
         auto.general(); //static is gebruikt
         auto.countObjects(); //count doet het niet.
-
+        auto.setModelNaam("I3");
+        auto.getModelNaam();
+        System.out.println(auto.modelNaam);
+        System.out.println(auto.dealerName);
     }
 }
 

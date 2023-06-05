@@ -15,14 +15,17 @@ x gebruik een enum. --> voor wielen
 ik ga er een met voertuigen maken
  */
 public class Toetsopdracht extends Vehicle{
-    private String modelNaam;
+    public String modelNaam;
+    int aantalWielen;
     Scanner input = new Scanner(System.in);
 
 
-    public Toetsopdracht() {}
-    public void configuratie() {
+    public Toetsopdracht() {
+        this.modelNaam = modelNaam;
+    }
+    public int configuratie() {
         System.out.println("hoeveel wielen heb ik? 2/3/4? ");
-        int aantalWielen = input.nextInt();
+        aantalWielen = input.nextInt();
         switch (aantalWielen) {
             case 2:
                 System.out.println("Volgens jou heb ik 2 wielen en ben ik dus een " + Wielen.TWEEWIELER);
@@ -36,6 +39,7 @@ public class Toetsopdracht extends Vehicle{
             default:
                 System.out.println("Heb ik wel wielen of ben ik een "+ Wielen.EENWIELER+"?");
         }
+        return aantalWielen;
 
     }
     public String getModelNaam() {
@@ -45,7 +49,6 @@ public class Toetsopdracht extends Vehicle{
     public void setModelNaam(String modelNaam) {
         this.modelNaam = modelNaam;
     }
-
 
 
 }
