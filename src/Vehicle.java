@@ -18,8 +18,9 @@ class Vehicle { //is default waarde nu
         return dealerName;
     }
 
-    public static int countObjects() {
-        return count++;
+    public static int countObjects() { // hij staat verkeerd want nu doet hij alleen ++ als je countobjects oproept.
+        count++;
+        return count;
     }
 
     public static void general() {
