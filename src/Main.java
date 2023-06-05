@@ -13,8 +13,16 @@ public class Main {
 
 
 
-        Dag_15 freach = new Dag_15();
-        freach.min();
+//        Dag_15 freach = new Dag_15();
+//        freach.min();
+
+        Toetsopdracht auto = new Toetsopdracht();
+        auto.honk();
+        auto.dealer();
+        auto.configuratie();
+        auto.general(); //static is gebruikt
+        auto.countObjects(); //count doet het niet.
+
     }
 }
 
