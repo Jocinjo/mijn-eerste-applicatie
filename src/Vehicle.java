@@ -5,7 +5,7 @@ class Vehicle { //is default waarde nu
     String dealerName;
     protected static int count;
 
-    protected String brand = "BMW";
+    protected static String brand = "BMW"; // static is gebruikt deze veranderd namelijk nie
 
     public void honk() {
         System.out.println("Ik ga toeteren met mijn " + brand + "!");
