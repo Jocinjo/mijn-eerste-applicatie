@@ -13,13 +13,10 @@ public class Main {
 
 
 
-//        Dag_15 freach = new Dag_15();
-//        freach.min();
+        Dag_15 freach = new Dag_15();
+        freach.min();
 
-        Verpakking melk = new Verpakking(2,5, 10, true);
-        Verpakking fris = new Verpakking(2, 5, 10, true);
-        Verpakking kellogs = new Verpakking(2, 10, 5, false);
-        System.out.println(melk.equals(fris); //fit snap ik nog niet. equals moet ik nog uitzoeken.
+
     }
 }
 

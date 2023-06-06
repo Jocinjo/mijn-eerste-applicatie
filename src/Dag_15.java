@@ -16,7 +16,30 @@ public class Dag_15 {
         }
         System.out.println(currentSmallest);
 
+        currentSmallest = Integer.MAX_VALUE;
+        for (int index : array) {
+            if (index < currentSmallest) {
+                currentSmallest = index;
+            }
+
+
+        }
+        System.out.println(currentSmallest);
+
+        int total = 0;
+        for (int index = 0; index < array.length; index++)
+            total += array[index];
+        double average = (double) total / array.length;
+        System.out.println(average);
+
+        total = 0;
+        for (int index: array)
+            total += index;
+            average = (double) total / array.length;
+            System.out.println(average);
+
 
 
     }
+
 }
