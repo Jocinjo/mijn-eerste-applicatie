@@ -18,16 +18,9 @@ public class Main {
 //        Dag_15 freach = new Dag_15();
 //        freach.min();
 
-        try {
-            FileInputStream fis = new FileInputStream("test.txt");
-        }catch (FileNotFoundException e){
-            System.out.println("File not found");
-        }catch (IndexOutOfBoundsException e){
-            System.out.println("deze laat hij alleen zien als de eerste fout een out of bounds is");
-        }finally {
-            System.out.println("Try exception is done");
-        }
-
+        Boeken alice = new Boeken();
+        alice.zoekBoek(true);
+        alice.geefLes();
     }
 }
 
