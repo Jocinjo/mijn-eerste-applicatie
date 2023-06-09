@@ -15,6 +15,8 @@ public class Main{
 
 
 //        tombOfAgolTheWise();
+        Dag_18 attack = new Dag_18();
+        attack.guessPosition();
     }
 }
 
