@@ -9,13 +9,12 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Main extends Dag_17{
+public class Main{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
 
 //        tombOfAgolTheWise();
-        System.out.println(myTombOfAgolTheWise(10)); //recursion werkt
     }
 }
 
