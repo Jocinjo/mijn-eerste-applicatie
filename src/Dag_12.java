@@ -9,19 +9,19 @@ geef ook aan als het wel geraden is.
 
 de do while loop werkt anders dan de while loop. in dit specifieke geval werkt de while loop niet.
  */
-public class Dag_12 {
+public class Dag_12 extends DifferentScanners {
     public Dag_12() {}
     public void spelletje() {
         Scanner input = new Scanner(System.in);
         int pilotNumber;
+        pilotNumber = askForNumberInRange("Pilot will you please give us a number between 0 and 100: ", 0, 100);
 
-
-        do {
-            System.out.println("pilot will you please give us a number between 0 and 100: ");
-            pilotNumber = input.nextInt();
-            System.out.println("please try again pilot! ");
-        }
-        while (pilotNumber < 0 ||pilotNumber > 100);
+//        do {
+//            System.out.println("pilot will you please give us a number between 0 and 100: ");
+//            pilotNumber = input.nextInt();
+//            System.out.println("please try again pilot! ");
+//        }
+//        while (pilotNumber < 0 ||pilotNumber > 100);
 
         for(int i = 0; i <51; i++) {
             System.out.println(i);

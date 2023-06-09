@@ -15,12 +15,9 @@ public class Main {
 
 
 
-//        Dag_15 freach = new Dag_15();
-//        freach.min();
 
-        Boeken alice = new Boeken();
-        alice.zoekBoek(true);
-        alice.geefLes();
+        Dag_12 game = new Dag_12();
+        game.spelletje();
     }
 }
 
