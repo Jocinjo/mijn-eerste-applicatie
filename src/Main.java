@@ -15,8 +15,12 @@ public class Main{
 
 
 //        tombOfAgolTheWise();
-        Dag_18 attack = new Dag_18();
-        attack.guessPosition();
+//        Dag_18 attack = new Dag_18();
+//        attack.guessPosition();
+
+        int i = 128;
+        byte b = (byte) i;
+        System.out.println(b); //blijkbaar kun je niet van int naar byte typecasten omdat je dan -128 krijgt.
     }
 }
 
