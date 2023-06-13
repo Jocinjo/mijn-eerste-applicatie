@@ -23,14 +23,14 @@ public class Main {
 //        System.out.println(b); //blijkbaar kun je niet van int naar byte typecasten omdat je dan -128 krijgt.
 
 
-//        EvenOnevenOefentoets test = new EvenOnevenOefentoets();
-//        test.allesBijElkaar();
-//        test.telAlles();
-//        Disney frozen = new Disney("Frozen", "woensdag");
-//        System.out.println(frozen);
+        Disney frozen = new Disney("Frozen", "woensdag", 500);
+        System.out.println(frozen);
+        System.out.println(frozen.getReleaseYear());
 
-        schoolklas welke = new schoolklas();
-        welke.klas();
+        frozen.setReleaseYear(500);
+        System.out.println(frozen.getReleaseYear());
+
+
 
     }
 }
