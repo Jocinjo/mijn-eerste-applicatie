@@ -45,6 +45,13 @@ public class forloop_oefening extends DifferentScanners {
             }
         }
         System.out.println("Dit is het evennummer: " + evennummer + " en dit is het onevennummer: " + onevennummer + " en het verschil is " + (evennummer - onevennummer));
-        System.out.println("Dit was oefening 5 en nu worden de waarden overschreven in een loop!");
+        System.out.println("Dit was oefening 5 en nu worden de waarden overschreven in een loop!\n");
+
+        int years = 10;
+        for (int i = 0; i <= 10; i++) {
+            years += i;
+        }
+        System.out.println("you are " + years + " old.");
+        System.out.println("Dit was oefening 6 met de voorloop\n");
     }
 }
