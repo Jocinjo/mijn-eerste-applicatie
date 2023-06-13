@@ -33,6 +33,18 @@ public class forloop_oefening extends DifferentScanners {
         }
         System.out.println("hier was oefening 4\n");
 
-
+        int evennummer = 0, onevennummer = 0;
+        nummer = askForNumber("Geef alsjeblieft nog een nummer");
+        for (int i = 0; i <= nummer; i++) {
+            if (i % 2 == 1) {
+                System.out.println("Dit is een onevennummer nameklijk: " + i);
+                onevennummer += i;
+            } else {
+                System.out.println("Dit is een even nummer namelijk: " + i);
+                evennummer += i;
+            }
+        }
+        System.out.println("Dit is het evennummer: " + evennummer + " en dit is het onevennummer: " + onevennummer + " en het verschil is " + (evennummer - onevennummer));
+        System.out.println("Dit was oefening 5 en nu worden de waarden overschreven in een loop!");
     }
 }

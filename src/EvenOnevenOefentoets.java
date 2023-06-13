@@ -1,4 +1,5 @@
 /*
+onderstaande werkt allemaal niet.
 de opdracht:
 geef een positief getal met de scanner next int.
 verkeerde invoer moet afgehandeld worden.
