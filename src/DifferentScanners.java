@@ -34,4 +34,10 @@ public class DifferentScanners {
         } while (number < min || number > max);
         return number;
     }
+
+    static String askForString(String text) {
+        System.out.println(text);
+        String scanned = input.next();
+        return scanned;
+    }
 }
