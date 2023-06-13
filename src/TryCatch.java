@@ -15,7 +15,7 @@ public class TryCatch extends DifferentScanners{
         System.out.println(cijfer);
 
         try {
-            int poging = 10 / 0;
+            int poging = 10/0;
             System.out.println(poging);
         } catch (ArithmeticException e) {
             System.out.println(e + " Je kan niet delen door nul.");

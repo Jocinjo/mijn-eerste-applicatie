@@ -26,7 +26,8 @@ public class Main {
         EvenOnevenOefentoets test = new EvenOnevenOefentoets();
         test.allesBijElkaar();
         test.telAlles();
-
+    Disney frozen = new Disney("Frozen", "woensdag");
+        System.out.println(frozen);
 
     }
 }
