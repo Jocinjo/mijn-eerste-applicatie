@@ -13,5 +13,15 @@ public class TryCatch extends DifferentScanners{
 
         int cijfer = askForNumber("geef een nummer nog een keer");
         System.out.println(cijfer);
+
+        try {
+            int poging = 10 / 0;
+            System.out.println(poging);
+        } catch (ArithmeticException e) {
+            System.out.println(e + " Je kan niet delen door nul.");
+        } finally {
+            System.out.println("is het al gelukt om de zerodivision niet te krijgen?");
+            //deze werkt ook
+        }
     }
 }
