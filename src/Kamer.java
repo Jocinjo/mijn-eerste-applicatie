@@ -12,6 +12,6 @@ public abstract class Kamer implements IKamer {
     public abstract void checkInGuests(Gast[] guests) throws Exception; // checkt in een aantal gasten in de kamer
 
     public boolean isKamerBezet() {
-        return gasten.length > 0;
+        return gasten.length > 0; //deze is nog niet geimplementeerd.
     }
 }

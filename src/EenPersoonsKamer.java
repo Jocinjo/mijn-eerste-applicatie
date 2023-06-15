@@ -1,12 +1,7 @@
 public class EenPersoonsKamer extends Kamer {
-    public static int aantalEenPersoonsKamers = 2;
 
     public EenPersoonsKamer(int grootte) {
         super(grootte);
-//        aantalEenPersoonsKamers--;
-//        if (aantalEenPersoonsKamers == 0) {
-//            System.out.println("Je kan niet meer eenpersoonskamers verhuren. Die zijn volgeboekt.");
-
     }
 
     @Override
@@ -16,12 +11,11 @@ public class EenPersoonsKamer extends Kamer {
 
     @Override
     public void checkInGuests(Gast[] guests) throws Exception {
-
+        //de exception moet misschien zijn dat het maar 2 kamers mogen zijn in toaal.
     }
 
     @Override
     public void printGasten() {
-
+        //
     }
-
 }
