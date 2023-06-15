@@ -4,6 +4,8 @@ public class Gast {
     private String achternaam, voornaam;
     private static final String [] VOORNAMEN = {"Adam", "Sophie", "Freek"};
     private static final String [] ACHTERNAMEN ={"de Vries", "van Loon", "Bakker"};
+    public Random choice = new Random();
+
 
     public Gast(String voornaam, String achternaam){
         this.voornaam = voornaam;
@@ -11,24 +13,34 @@ public class Gast {
     }
 
     public Gast() { //deze moet willekeureige namen kiezen
-        this(VOORNAMEN, ACHTERNAMEN, achternaam, voornaam);
-        voornaam = VOORNAMEN;
-        achternaam = ACHTERNAMEN;
-         Random choice = new Random();
-        String voornaamKeuze = choice.next(VOORNAMEN);
-        achternaam = ACHTERNAMEN[choice.next()];
-//        voornaamKeuze =
+       this.voornaam = voornaam;
+       this.achternaam = achternaam;
+
     }
 
-    public void setVoornaam(String voornaam) {
-        this.voornaam = voornaam;
+    public void setVoornaam() {
+        int voornaamKeuze = choice.nextInt(VOORNAMEN.length);
+        this.voornaam = VOORNAMEN[voornaamKeuze];
+
     }
 
-    public void setVoornaam(voornaam  = VOORNAMEN[choice.next()]) {}
 
-    public void setAchternaam(String achternaam = ACHTERNAMEN[choice.nect()]) {}
+    public void setAchternaam() {
+        int achternaamKeuze = choice.nextInt(ACHTERNAMEN.length);
+        this.achternaam = ACHTERNAMEN[achternaamKeuze];
+    }
 
-    public String getname() {
-        return this.voornaam + " " + this.achternaam;
+    public String getAchternaam() {
+        return achternaam;
+    }
+
+    public String getVoornaam() {
+        return voornaam;
+    }
+
+    @Override
+    public String toString() {
+        return "De voornaam van de gast is: " + voornaam + " en de achternaam is: " + achternaam;
     }
 }
+

@@ -1,13 +1,14 @@
-public class EenPersoonsKamer extends Kamer{
+public class EenPersoonsKamer extends Kamer {
     public static int aantalEenPersoonsKamers = 2;
 
-    public EenPersoonsKamer() {
-        aantalEenPersoonsKamers--;
-        if (aantalEenPersoonsKamers == 0) {
-            System.out.println("Je kan niet meer eenpersoonskamers verhuren. Die zijn volgeboekt.");
+    public EenPersoonsKamer(int grootte) {
+        super(grootte);
+//        aantalEenPersoonsKamers--;
+//        if (aantalEenPersoonsKamers == 0) {
+//            System.out.println("Je kan niet meer eenpersoonskamers verhuren. Die zijn volgeboekt.");
 
-        }
     }
+
     @Override
     public String getKamerType() {
         return null;
@@ -22,4 +23,5 @@ public class EenPersoonsKamer extends Kamer{
     public void printGasten() {
 
     }
+
 }
