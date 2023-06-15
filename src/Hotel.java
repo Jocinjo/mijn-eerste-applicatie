@@ -26,7 +26,7 @@ public class Hotel implements IHotel {
                 aantalEenpersoonsKamers -=1;
 
             } else {
-                System.out.println("Er is gelaas geen kamer vrij.");
+                System.out.println("Er is helaas geen kamer vrij.");
             }
         } else if (numberOfGuests == 2) {
             System.out.println("Wij gaan voor je kijken");
@@ -34,7 +34,7 @@ public class Hotel implements IHotel {
                 System.out.println("We hebben een kamer vrij");
                 aantalTweePersoonskamers -=1;
             } else {
-                System.out.println("Er gis geen kamer vrij.");
+                System.out.println("Er is geen kamer vrij.");
             }
         } else if (numberOfGuests == 3 || numberOfGuests == 4) {
             System.out.println("Wij gaan voor je kijken");
@@ -42,7 +42,7 @@ public class Hotel implements IHotel {
                 System.out.println("We hebben een kamer vrij");
                 aantalVierPersoonsKamers -=1;
             } else {
-                System.out.println("Er gis geen kamer vrij.");
+                System.out.println("Er is geen kamer vrij.");
             }
         } else {
             System.out.println("Sorry probeer opnieuw!");
