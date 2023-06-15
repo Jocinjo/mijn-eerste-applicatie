@@ -44,5 +44,6 @@ public class Receptie extends Hotel implements IReceptie {
 
     @Override
     public void stop() {
-        System.out.println("Bye");    }
+        System.out.println("Bye");
+    }
 }
