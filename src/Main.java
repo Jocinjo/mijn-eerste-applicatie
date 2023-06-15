@@ -1,8 +1,12 @@
+/*
+ Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+ then press Enter. You can now see whitespace characters in your code.
+check of hij het nog steeds doet.
+
+ shift F6 gebruiken om een naam te veranderen maar alle verwijzingen ook meteen mee te veranderen.
+ */
 
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-//check of hij het nog steeds doet.
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
